@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clndr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body style="background: linear-gradient(45deg,#6ac1c5,#bda5ff)" onload="cal()">
+    <div class="box">
+        <div>
+            <div class="months">
+                <div class="prev" onclick="mvdt('p')">
+                    <span>
+                        &#10094
+                    </span>
+                </div>
+                <div>
+                    <h2 id="mnth"></h2>
+                    <p id="tod"></p>
+                </div>
+                <div class="next" onclick="mvdt('n')">
+                    <span>
+                        &#10095
+                    </span>
+                </div>
+                <div class="list">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                    <div class="con">
+                        <ul>
+                            <li><button onclick="listv('y')">YEAR</button></li>
+                            <li><button onclick="listv('m')">MONTH</button></li>
+                        </ul>
+                    </div>      
+                </div>  
+            </div>
+            <div class="days">
+                <div>SUN</div>
+                <div>MON</div>
+                <div>TUE</div>
+                <div>WED</div>
+                <div>THU</div>
+                <div>FRI</div>
+                <div>SAT</div>
+            </div>
+        </div>
+        <div class="dates">
+
+        </div>
+    </div>
+    <script src="clndr.js"></script>
+</body>
+
+</html>
