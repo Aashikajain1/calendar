@@ -39,17 +39,3 @@ function mvdt(arg) {
     }
     cal();
 }
-function listv(arg){
-    if(arg=='y'){
-        var yr;    
-        yr=Number(prompt("Enter Year"));
-        
-        
-    }
-    else if(arg=='m'){
-        var yr;
-        yr=Number(prompt("Enter Month"));
-        dt.setMonth(dt.getMonth(yr)-1);
-    }
-    cal();
-}
