@@ -1,6 +1,6 @@
 var dt = new Date();
 function cal() {
-    document.getElementById("tod").innerHTML = dt.getFullYear();
+    document.getElementById("tod").innerHTML = dt.toDateString();
     dt.setDate(1);
     var day = dt.getDay();
     console.log(dt.getDay());
