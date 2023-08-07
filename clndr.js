@@ -4,14 +4,12 @@ function cal() {
     dt.setDate(1);
     var day = dt.getDay();
     console.log(dt.getDay());
-
     var enddt = new Date(dt.getFullYear(), dt.getMonth() + 1, 0).getDate();
     var prdt = new Date(dt.getFullYear(), dt.getMonth(), 0).getDate();
 
     var month = ["JANUARY", "FEBRUARY", "MARCH", "APRIL", "MAY", "JUNE", "JULY",
         "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"];
     document.getElementById("mnth").innerHTML = month[dt.getMonth()];
-
     var today = new Date();
     console.log(today);
     var d = "";
@@ -28,7 +26,6 @@ function cal() {
 
     }
     document.getElementsByClassName("dates")[0].innerHTML = d;
-
 }
 function mvdt(arg) {
     if (arg == 'p') {
